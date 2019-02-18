@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.king.swipeitemlayout.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sil_swipeitem_container"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:sil_bottomMode="layDown"
+    app:sil_springDistance="20dp"
+    app:sil_swipeDirection="left">
+
+    <TextView
+        android:id="@+id/tv_delete_text"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#f00"
+        android:gravity="center"
+        android:text="删除" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9674FC"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="测试Margin,Padding以及各种事件" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/delete" />
+    </LinearLayout>
+</com.github.king.swipeitemlayout.SwipeItemLayout>
